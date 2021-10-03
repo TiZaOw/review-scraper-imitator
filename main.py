@@ -4,7 +4,7 @@ import json
 
 #Verbindung und Set-Up mit dem MongoDB cluster
 ca = certifi.where()
-database_url = "mongodb+srv://admin:admin@review-cluster.y16gr.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
+database_url = "mongodb+srv://admin:<password>@review-cluster.y16gr.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
 client = pymongo.MongoClient(database_url, tlsCAFile=ca)
 mongo_db = client.db
 
